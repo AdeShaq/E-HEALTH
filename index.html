@@ -47,6 +47,23 @@
     padding: 20px;
     text-align: center;
   }
+
+    .intro-section {
+    position: relative; /* Needed for absolute positioning of overlays */
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    background-image: url('./images/about-bg.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    color: white; /* Default text color on the image */
+    text-align: center; /* Center content horizontally */
+  }
+
+  .intro-content p {
+    font: 2em sans-serif;
+    color: black;
+  }
 </style>
 </head>
 <body>
@@ -76,47 +93,66 @@
         <!-- hero section -->
          <section class="hero-section">
             <div class="hero-content">
-                <h1>Welcome to Our Health Center</h1>
-                <button>Learn More</button>
+                <h1>Your Health Benefits</h1>
+                <button>Read Stories</button>
             </div> 
          </section>
 
         <!-- intro section -->
-         <section>
-            <div class="below-content">
-                <h2>About Us</h2>
-                <p>We are dedicated to providing the best healthcare services to our community. Our team of experienced professionals is here to ensure your health and well-being.</p>
+         <section class="below-content intro-section">
+            <div align="left" class="intro-content">
+                <p><b>We are dedicated to providing the best healthcare services to our community.</b> <br>
+                    <b>Our team of experienced professionals is here to ensure your health and well-being.</b></p>
             </div>
          </section>
 
          <!-- doctors section -->
           <section>
             <div class="below-content">
-                <h2>Meet Our Doctors</h2>
-                <p>Our team of doctors is highly qualified and experienced in various medical fields. We are committed to providing personalized care to each patient.</p>
+                <h2>Our Doctors</h2>
             </div>
+            <img src="./images/team-image1.jpg" alt=""><img src="./images/team-image2.jpg" alt=""><img src="./images/team-image3.jpg" alt="">
         </section>
 
             <!-- latest news section-->
           <section>
-
+            <h2 align="center">Latest News</h2>
+            <div><img src="./images/news-image1.jpg" alt=""></div>
+            <div><img src="./images/news-image2.jpg" alt=""></div>
+            <div><img src="./images/news-image3.jpg" alt=""></div>
           </section>
 
           <!-- appointment section-->
            <section>
-             
+             <div align="left">
+                <img src="/images/appointment-image.jpg" alt="">
+             </div>
+             <div align="right">
+                <form>
+                    <input type="text" placeholder="Your Name" required><br>
+                    <input type="email" placeholder="Your Email" required><br>
+                    <input type="date" placeholder="Appointment Date" required><br>
+                    <input type="" placeholder="Select Doctor" required>
+                    <br>
+                    <input type="tel" placeholder="Your Phone Number" required><br>
+                </form>
+             </div>
            </section>
 
            <!-- location section -->
             <section>
 
             </section>
-            
+
       </main>
 
       <!-- footer section -->
        <footer>
-
+        <div align="right">
+            <p> Laboratory Test Department Insurance Policy</p>
+        </div>
+        <div align="left">
+        <p>© 2023 Health Center. All rights reserved.</p>
        </footer>
 </body>
 </html>
