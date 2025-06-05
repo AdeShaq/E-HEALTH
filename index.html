@@ -5,6 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Health</title>
     <script src="https://kit.fontawesome.com/466ccf27ba.js" crossorigin="anonymous"></script>
+    <style>
+  /* Hero Section Styles */
+  .hero-section {
+    position: relative; /* Needed for absolute positioning of overlays */
+    width: 100%;
+    height: 500px; /* Adjust as needed */
+    background-image: url('./images/slider3.jpg'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    color: white; /* Default text color on the image */
+    text-align: center; /* Center content horizontally */
+  }
+
+  /* Overlay Content (Text and Buttons) */
+  .hero-content {
+    position: absolute; /* Positioned relative to the hero-section */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center perfectly */
+    z-index: 1; /* Ensure content is above the background image */
+  }
+
+  .hero-content h1 {
+    font-size: 3em; /* Adjust as needed */
+    margin-bottom: 20px;
+  }
+
+  .hero-content button {
+    background-color: #007bff; /* Example button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+
+  /* Example Content Below Hero Section */
+  .below-content {
+    padding: 20px;
+    text-align: center;
+  }
+</style>
 </head>
 <body>
     <!-- header section -->
@@ -30,7 +73,14 @@
 
      <!-- main section -->
       <main>
-
+        <!-- hero section -->
+         <section class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to Our Health Center</h1>
+                <button>Learn More</button>
+            </div> 
+         </section>
+        <!-- intro section -->
       </main>
 
       <!-- footer section -->
